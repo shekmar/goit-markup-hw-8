@@ -301,6 +301,7 @@
     line-height: 1.1;    
     letter-spacing: 0.01em;    
     color: var(--scnd-txt-cl);
+    text-align: left;
 }
 
 .registry-field:not(:first-child) {
@@ -423,7 +424,7 @@
 }
 
 .checkbox-lable::after {
-    display: block;
+    display: flex;
     content: '';
     width: 15px;
     height: 16px;
