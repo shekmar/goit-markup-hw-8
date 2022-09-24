@@ -264,7 +264,8 @@
 }
 
 .registry-form {
-    padding: 40px 40px;
+    padding: 0;
+    margin-bottom: 12px;
     margin-right: auto;
     margin-left: auto;
 }
@@ -416,6 +417,30 @@
 
 /*Іконка CHECKBOX*/
 
+.checkbox-lable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-checked {
+    opacity: 0;
+    transition: opacity 250ms;
+}
+
+.checkbox:checked + .checkbox-icons .icon-checked {
+    opacity: 1;
+}
+
+.icon-unchecked {
+    opacity: 1;
+    transition: opacity 250ms;
+}
+
+.checkbox:checked + .checkbox-icons .icon-unchecked {
+    opacity: 0;
+}
+
 .modal-checkbox {
     display: flex;
     width: 100%;
@@ -423,34 +448,7 @@
     align-items: center;
 }
 
-.checkbox-lable::after {
-    display: flex;
-    content: '';
-    width: 15px;
-    height: 16px;
-    border: 2px solid var(--main-txt-cl);
-    margin-right: 8px;
-    margin-left: 12px;
-}
-
-.checkbox {
-    appearance: none;
-}
-
-.checkbox:checked + .checkbox-lable::after{
-    display: inline-block;
-    width: 15px;
-    height: 16px;
-    border: 2px solid var(--accent-txt-cl);
-    margin-right: 8px;
-    background-color: var(--accent-txt-cl);
-    background-image: url(../symbol-defs.svg#icon-check-done);    
-    background-size: contain;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: var(--scnd-txt-cl);  
-}
+.check-icons {}
 
 .check-rules {  
     text-decoration-color: var(--accent-txt-cl);
@@ -465,7 +463,8 @@
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;    
-    color: var(--scnd-txt-cl);    
+    color: var(--scnd-txt-cl);  
+    margin-left: 7px;  
 }
 
 /*Кнопка Надіслати в модальному вікні*/
@@ -901,6 +900,7 @@
     line-height: 16px;
     text-transform: uppercase;
     color: var(--light-txt-cl);
+    margin: 0;
     margin-bottom: 20px;
 }
 
