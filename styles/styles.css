@@ -417,38 +417,28 @@
 
 /*Іконка CHECKBOX*/
 
-.checkbox-lable {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.checkbox {
+    appearance: none;
+    position: absolute;
 }
 
-.icon-checked {
-    opacity: 0;
-    transition: opacity 250ms;
+.checkbox:checked + .check-icon {
+    background-color: var(--accent-txt-cl);
+    border-color: var(--accent-txt-cl);
+    background-image: url(../images/check-2.svg);
+    color: rgba(255, 255, 255, 1);
+    background-size: contain;
+    background-origin: border-box;
 }
 
-.checkbox:checked + .checkbox-icons .icon-checked {
-    opacity: 1;
+.check-icon {
+    display: inline-block;
+    margin-right: 7px;
+    width: 16px;
+    height: 15px;
+    border: 2px solid rgba(33, 33, 33, 1);
+    border-radius: 4px;
 }
-
-.icon-unchecked {
-    opacity: 1;
-    transition: opacity 250ms;
-}
-
-.checkbox:checked + .checkbox-icons .icon-unchecked {
-    opacity: 0;
-}
-
-.modal-checkbox {
-    display: flex;
-    width: 100%;
-    margin-top: 20px;
-    align-items: center;
-}
-
-.check-icons {}
 
 .check-rules {  
     text-decoration-color: var(--accent-txt-cl);
@@ -459,7 +449,7 @@
     text-decoration: underline;
 }
 
-.check-box-container {
+.check-box-policy {
     font-size: 14px;
     line-height: 1.7;
     letter-spacing: 0.03em;    
