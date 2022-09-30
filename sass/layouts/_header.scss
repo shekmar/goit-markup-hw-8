@@ -1,0 +1,115 @@
+.header {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.header-navigation {
+    margin-right: auto;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-header {
+    color: rgba(0, 0, 0, 1);
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-right: 93px;
+}
+
+.logo-header__element {
+    color: var(--accent-txt-cl);
+}
+
+.navigation {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation__header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    color: var(--main-txt-cl);
+    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    position: relative;
+}
+
+.navigation__header-link:hover,
+.navigation__header-link:focus,
+.active {
+    color: var(--accent-txt-cl);
+} 
+
+.navigation .navigation__header-link.current::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    left: 0;
+    bottom: -3%;
+    border-radius: 2px;
+    border: transparent;
+    background-color: var(--accent-txt-cl);
+    display: inline-block;
+    outline: 1px solid var(--accent-txt-cl);
+} 
+
+.header-list-contacts {
+    list-style: none;
+    color: var(--scnd-txt-cl);
+    font-weight: 500;
+    display: flex;
+    gap: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.header-list-contacts .link-contacts {
+    color: var(--scnd-txt-cl);
+}
+
+.header-list-contacts .link-contacts:hover,
+.header-list-contacts .link-contacts:focus {
+    color: var(--accent-txt-cl);
+}
+
+.link-contacts {
+    text-decoration: none;
+    color: currentColor;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    vertical-align: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.link-contacts:hover .link-contacts__icon-header,
+.link-contacts:focus .link-contacts__icon-header {
+    fill: var(--accent-txt-cl);
+}
+
+.link-contacts__icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    stroke: var(--scnd-txt-cl);
+    fill: var(--scnd-txt-cl);
+}

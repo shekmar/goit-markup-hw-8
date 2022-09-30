@@ -1,0 +1,21 @@
+//utils styles
+@import './utils/vars';
+
+//base styles
+@import './base/reset';
+@import './base/base';
+
+//layout styles
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/modal-window';
+@import './layouts/features';
+@import './layouts/our-work';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/portfolio';
+
+//components styles
+@import './components/social-icon';
+
