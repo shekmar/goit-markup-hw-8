@@ -15,19 +15,39 @@
 }
 
 .hero__title {
-    color: var(--light-txt-cl);
-    text-transform: uppercase;
-    font-family: "Roboto";
-    font-style: normal;
+
+    font-family: inherit;
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60 / 44);
+    text-align: center;
     letter-spacing: 0.06em;
-    margin: 0;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: var(--light-txt-cl);
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
-    width: 696px;
+
+    @media screen and (max-width: 767px) {
+      font-style: normal;
+      font-size: 26px;
+      line-height: 1.6;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-style: normal;
+      font-size: 26px;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 1199px) {
+      max-width: 360px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.4;
+      width: 696px;
+    }
 }
 
 .hero__button {

@@ -5,24 +5,57 @@
 }
 
 .footer-container-general {
-    display: flex;
-    align-items: baseline;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: baseline;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .footer-box-navigation {
-    margin-right: 70px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding-left: 61px;
+        padding-right: 74px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+    }
 }
 
 .logo-footer {
     color: var(--accent-txt-cl);
-    font-family: 'Raleway';
     font-style: normal;
     text-decoration: none;
+    font-family: 'Raleway', sans-serif;
     font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
+    font-size: 24px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+
+    text-align: center;
     margin-bottom: 20px;
-    display: inline-block;
+    @media screen and (min-width: 1200px) {
+        font-size: 26px;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+    display: block;
 }
 
 .logo-footer__element {
@@ -47,6 +80,10 @@
     margin: 0;
     padding: 0;
     font-style: normal;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+    }
 }
 
 .footer-list-contacts__item {
@@ -76,13 +113,53 @@
 }
 
 .footer-box-socials__title {
-    font-family: "Roboto";
+
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    color: var(--light-txt-cl);
+    line-height: 16px;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    margin-top: 0;
+    color: var(--light-txt-cl);
     margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+}
+
+.footer-socials {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+    }
+}
+
+.footer-form {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: auto;
+    }
+}
+
+.footer-form__container {
+    @media screen and (min-width: 1200px) {
+        display: block;
+        align-items: center;
+    }
+}
+
+.footer-form__container .newsletter-title {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin-top: 60px;
+    }
 }
 
 .newsletter-title {
@@ -99,18 +176,38 @@
 .newsletter-label {
     display: inline-block;
     margin-right: 12px;
+
+    align-items: center;
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: flex-start;
+    }
 }
 
 .newsletter-input {
-    width: 358px;
-    height: 50px;
-    padding: 15px;
+    width: 100%;
     background-color: var(--dark-background-cl);
-    color: rgba(255, 255, 255, 0.6);
-    box-sizing: border-box;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-color: rgba(255, 255, 255, 0.3);
     border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 450px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        height: 50px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
 
 .newsletter-btn {
@@ -128,10 +225,19 @@
     background-color: var(--accent-txt-cl);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-    display: inline-flex;
+
+    display: flex;
     align-items: center;
-    text-align: center;
-    transition: 250ms, cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 10px;
+        height: 50px;
+        padding-left: 28px;
+        margin-left: 0;
+    }
 }
 
 .newsletter-icon {

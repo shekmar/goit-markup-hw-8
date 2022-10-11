@@ -17,8 +17,8 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Custom styles-->
-    <link rel="stylesheet" href="./css/main.min.css"/>
-    <!--<link rel="stylesheet" href="./styles/styles.css" />-->
+    <link rel="stylesheet" href="./css/main.min.css"/> 
+    <link rel="stylesheet" href="./styles/styles.css" />
 
 </head>
 
@@ -37,7 +37,7 @@
                 </ul>
             </nav>
             <ul class="header-list-contacts">
-                <li>
+                <li class="header-list-contacts__item">
                     <a class="link-contacts" href="mailto:info@devstudio.com">
                         <svg class="link-contacts__icon-header" width="16" height="12">
                             <use href="./symbol-defs.svg#icon-envelope"></use>
@@ -45,7 +45,7 @@
                         info@devstudio.com
                     </a>
                 </li>
-                <li>
+                <li class="header-list-contacts__item">
                     <a class="link-contacts" href="tel:+380961111111">
                         <svg class="link-contacts__icon-header" width="10" height="16">
                             <use href="./symbol-defs.svg#icon-smartphone"></use>
@@ -122,8 +122,8 @@
         <section class="features section">
             <div class="container features-container">
                 <ul class="features__list">
-                    <li>
-                        <div class="features__icon">
+                    <li class="features__item">
+                        <div class="features__container">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-antenna-1"></use>
                             </svg>
@@ -132,8 +132,8 @@
                         <p class="features__text">Ідейні міркування, і навіть початок повсякденної роботи з
                             формування позиції.</p>
                     </li>
-                    <li>
-                        <div class="features__icon">
+                    <li class="features__item">
+                        <div class="features__container">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-clock-1"></use>
                             </svg>
@@ -142,8 +142,8 @@
                         <p class="features__text">Завдання організації, особливо рамки і місце навчання кадрів тягне
                             у себе.</p>
                     </li>
-                    <li>
-                        <div class="features__icon">
+                    <li class="features__item">
+                        <div class="features__container">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-diagram-1"></use>
                             </svg>
@@ -151,8 +151,8 @@
                         <h3 class="features__title">ПЛАНУВАННЯ</h3>
                         <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
-                    <li>
-                        <div class="features__icon">
+                    <li class="features__item">
+                        <div class="features__container">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-astronaut-1"></use>
                             </svg>
@@ -376,42 +376,42 @@
             <div class="container">
                 <h2 class="clients__title">Постійні клієнти</h2>
                 <ul class="clients__list">
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon" width="106" height="60">
                                 <use href="./symbol-defs.svg#icon-logo"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon" width="106" height="60">
                                 <use href="./symbol-defs.svg#icon-logo1"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon" width="106" height="60">
                                 <use href="./symbol-defs.svg#icon-logo2"></use>
                             </svg>
                         </a> 
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon" width="106" height="60">
                                 <use href="./symbol-defs.svg#icon-logo3"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon" width="106" height="60">
                                 <use href="./symbol-defs.svg#icon-logo4"></use>
                             </svg>
                         </a>
                     </li>
-                    <li>
+                    <li class="clients__item">
                         <a class="clients__link" href="">
                             <svg class="clients__icon" width="106" height="60">
                                 <use href="./symbol-defs.svg#icon-logo5"></use>
@@ -477,17 +477,19 @@
                 </ul>
             </div>
             <div>
-                <form>
-                    <p class="newsletter-title">Підпишіться на розсилку</p>
-                    <label class="newsletter-label">
-                        <input class="newsletter-input" type="email" name="user-email" placeholder="E-mail">
-                    </label>
-                    <button class="newsletter-btn" type="submit">
-                        Підписатися
-                        <svg class="newsletter-icon" width="24" height="24">
-                            <use href="./symbol-defs.svg#icon-icon-send"></use>
-                        </svg>
-                    </button>
+                <form class="footer-form">
+                    <div class="footer-form__container">
+                        <p class="newsletter-title">Підпишіться на розсилку</p>
+                        <label class="newsletter-label">
+                            <input class="newsletter-input" type="email" name="user-email" placeholder="E-mail">
+                        </label>
+                        <button class="newsletter-btn" type="submit">
+                            Підписатися
+                            <svg class="newsletter-icon" width="24" height="24">
+                                <use href="./symbol-defs.svg#icon-icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
