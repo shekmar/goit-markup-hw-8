@@ -18,7 +18,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--Custom styles-->
     <link rel="stylesheet" href="./css/main.min.css"/> 
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <!--<link rel="stylesheet" href="./styles/styles.css" /> -->
 
 </head>
 
@@ -28,8 +28,18 @@
 
     <header class="header">
         <div class="container header-container">
+            <a href="./index.html" class="logo-header"><span class="logo-header__element">Web</span>Studio</a>
+            <!--mobile menu-->
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                >
+                <svg width="40" height="40" aria-label="перемикач мобільного меню">
+                    <use href="./symbol-defs.svg#icon-menu-btn"></use>
+                </svg>
+            </button>
             <nav class="header-navigation">
-                <a href="./index.html" class="logo-header"><span class="logo-header__element">Web</span>Studio</a>
                 <ul class="navigation">
                     <li><a class="navigation__header-link active current" href="./index.html">Студія</a></li>
                     <li><a class="navigation__header-link" href="./portfolio.html">Портфоліо</a></li>
@@ -54,16 +64,7 @@
                     </a>
                 </li>
             </ul>
-            <!--mobile menu-->
-            <button
-                class="menu-toggle js-open-menu"
-                aria-expanded="false"
-                aria-controls="mobile-menu"
-                >
-                <svg width="40" height="40" aria-label="перемикач мобільного меню">
-                    <use href="./symbol-defs.svg#icon-menu-btn"></use>
-                </svg>
-            </button>
+            
             <!--mobile menu-->
             <div class="menu-container js-menu-container is-open" id="mobile-menu">
                 <button class="menu-toggle js-close-menu">
