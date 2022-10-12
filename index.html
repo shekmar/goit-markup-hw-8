@@ -54,6 +54,55 @@
                     </a>
                 </li>
             </ul>
+            <!--mobile menu-->
+            <button
+                class="menu-toggle js-open-menu"
+                aria-expanded="false"
+                aria-controls="mobile-menu"
+                >
+                <svg width="40" height="40" aria-label="перемикач мобільного меню">
+                    <use href="./symbol-defs.svg#icon-menu-btn"></use>
+                </svg>
+            </button>
+            <!--mobile menu-->
+            <div class="menu-container js-menu-container is-open" id="mobile-menu">
+                <button class="menu-toggle js-close-menu">
+                    <svg class="icon-menu" width="40px" height="40px">
+                        <use href="./symbol-defs.svg#icon-menu-close"></use>
+                    </svg>
+                </button>
+                <ul class="navigation--mobile">
+                    <li><a href="./index.html" class="navigation__header-link">Студія</a></li>
+                    <li><a href="./portfolio.html" class="navigation__header-link">Портфоліо</a></li>
+                    <li><a href="" class="navigation__header-link">Контакти</a></li>
+                </ul>
+                <ul class="navigation--mobile">
+                    <li class="navigation__item navigation__item-mobile">
+                        <a href="tel:+380961111111" class="navigation__link navigation__link-mobile-tel">+38 096 111 11 11</a>
+                    </li>
+                    <li class="navigation-item navigation__item-mobile">
+                        <a href="mailto:info@devstudio.com" class="navigation__link navigation__link-mobile-mail">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-menu__social">
+                    <li><a class="mobile-menu__link mobile-menu__link-after" href="https://instagram.com" target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram">Instagram</a>
+                    </li>
+                    <li><a class="mobile-menu__link mobile-menu__link-after" href="https://instagram.com" target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Twitter">Twitter</a>
+                    </li>
+                    <li><a class="mobile-menu__link mobile-menu__link-after" href="https://instagram.com" target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook">Facebook</a>
+                    </li>
+                    <li><a class="mobile-menu__link " href="https://instagram.com" target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn">LinkedIn</a>
+                    </li>
+              </ul>
+            </div>
         </div>
     </header>
 
@@ -123,7 +172,7 @@
             <div class="container features-container">
                 <ul class="features__list">
                     <li class="features__item">
-                        <div class="features__container">
+                        <div class="features__icon">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-antenna-1"></use>
                             </svg>
@@ -133,7 +182,7 @@
                             формування позиції.</p>
                     </li>
                     <li class="features__item">
-                        <div class="features__container">
+                        <div class="features__icon">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-clock-1"></use>
                             </svg>
@@ -143,7 +192,7 @@
                             у себе.</p>
                     </li>
                     <li class="features__item">
-                        <div class="features__container">
+                        <div class="features__icon">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-diagram-1"></use>
                             </svg>
@@ -152,7 +201,7 @@
                         <p class="features__text">Так само консультація з широким активом значною мірою зумовлює.</p>
                     </li>
                     <li class="features__item">
-                        <div class="features__container">
+                        <div class="features__icon">
                             <svg class="" width="70" height="70">
                                 <use href="./symbol-defs.svg#icon-astronaut-1"></use>
                             </svg>
@@ -494,7 +543,15 @@
             </div>
         </div>
     </footer>
-<script src="./js/modal.js"></script>
+<!--script-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

@@ -112,16 +112,25 @@
 
 .header-list-contacts {
     list-style: none;
+    display: flex;
+    align-items: center;
 
     @media screen and (max-width: 767px) {
         display: none;
     }
   
+    @media screen and (max-width: 1199px) {
+        flex-direction: column;
+        gap: 10px;
+        align-items: unset;
+    }
+
     @media screen and (min-width: 1200px) {
       display: flex;
       gap: 50px;
       margin-left: auto;
     }
+
 }
 
 .header-list-contacts__item {
@@ -157,7 +166,6 @@
       line-height: 1.1;
     }
 
-    display: flex;
     align-items: center;
     color: var(--scnd-txt-cl);
     gap: 10px;
