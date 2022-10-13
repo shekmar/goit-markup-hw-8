@@ -10,6 +10,8 @@
 .header-navigation {
     display: flex;
     align-items: center;
+    margin: 0;
+    padding: 0;
 
     @media screen and (min-width: 768px) {
         justify-content: space-between;
@@ -17,6 +19,8 @@
 } 
 
 .header-navigation .navigation {
+    margin: 0;
+    padding: 0;
     @media screen and (max-width: 767px) {
         display: none;
     }
@@ -49,6 +53,8 @@
 .navigation {
     list-style: none;
     display: flex;
+    margin: 0;
+    padding: 0;
 
     @media screen and (max-width: 767px) {
         flex-wrap: wrap;
@@ -142,6 +148,7 @@
 
 .header-list-contacts .link-contacts {
     color: var(--scnd-txt-cl);
+    display: flex;
 }
 
 .header-list-contacts .link-contacts:hover,
