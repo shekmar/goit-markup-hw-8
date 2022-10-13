@@ -32,10 +32,29 @@
     color: #fff;
 }
 
+.navigation--mobile {
+    margin-bottom: auto;
+}
+
 .navigation--mobile .navigation__mobile-link {
     display: block;
     padding: 10px;
     text-decoration: none;
+}
+
+.navigation__mobile-link {
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+}
+
+.navigation--mobile_contacts {
+    list-style: none;
+    padding: 0;
 }
 
 .menu-toggle {
@@ -59,16 +78,17 @@
 }
 
 .navigation--mobile {
-    display: flex;
     padding: 0;
     margin: 0;
     list-style: none;
+    color: #212121;
 }
   
 .navigation__link-mobile-tel {
     font-size: 34px;
     color: var(--accent-txt-cl);
     margin-bottom: 32px;
+    text-decoration: none;
 }
   
 .navigation__link-mobile-mail {
@@ -78,6 +98,8 @@
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.02em;
+    text-decoration: none;
+    color: #757575;
 }
 
 .mobile-menu__social {
