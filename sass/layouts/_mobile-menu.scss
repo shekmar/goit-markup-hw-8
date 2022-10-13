@@ -8,11 +8,14 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     padding: 32px;
     background-color: white;
     z-index: 999;
+
+    display: flex;
+    flex-direction: column;
 
     transform: translateX(100%);
     transition: transform 400ms ease-in-out;
@@ -29,7 +32,7 @@
     color: #fff;
 }
 
-.navigation--mobile .navigation__header-link {
+.navigation--mobile .navigation__mobile-link {
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -78,6 +81,7 @@
 }
 
 .mobile-menu__social {
+    list-style: none;
     display: flex;
     margin-top: 64px;
     justify-content: center;
