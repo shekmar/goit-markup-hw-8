@@ -227,6 +227,7 @@
     -webkit-box-align: unset;
         -ms-flex-align: unset;
             align-items: unset;
+    margin-left: auto;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1286,11 +1287,22 @@
   padding-top: 60px;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-container-general {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 @media screen and (min-width: 768px) {
   .footer-container-general {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-orient: horizontal;
@@ -1313,12 +1325,31 @@
   }
 }
 
+@media screen and (max-width: 767px) {
+  .footer__box-tablet {
+    margin-bottom: 60px;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-box-navigation {
-    width: 100%;
+  .footer__box-tablet {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__box-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-box-navigation {
+    width: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1327,8 +1358,15 @@
             align-items: baseline;
     padding-left: 61px;
     padding-right: 74px;
+    margin-right: auto;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-box-navigation {
+    margin-right: 70px;
+  }
+}
+
 .logo-footer {
   color: var(--accent-txt-cl);
   font-style: normal;
@@ -1371,10 +1409,14 @@
   margin: 0;
   padding: 0;
   font-style: normal;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
+}
+@media screen and (max-width: 1199px) {
+  .footer-list-contacts {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .footer-list-contacts {
@@ -1412,6 +1454,11 @@
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .footer-box-socials {
+    margin-right: auto;
+  }
+}
 
 .footer-box-socials__title {
   font-family: "Roboto";
@@ -1447,17 +1494,22 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
   }
 }
 
 @media screen and (min-width: 320px) and (max-width: 1199px) {
   .footer-form {
     margin: auto;
-    margin-top: 60px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     margin-left: auto;
   }
 }
@@ -1498,7 +1550,6 @@
 
 .newsletter-label {
   display: inline-block;
-  margin-right: 12px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1514,6 +1565,11 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .newsletter-label {
+    margin-top: 0;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1557,10 +1613,6 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-}
-@media screen and (min-width: 768px) {
-  .newsletter-input {
     width: 450px;
   }
 }
@@ -1604,6 +1656,21 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .newsletter-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 @media screen and (min-width: 1200px) {
