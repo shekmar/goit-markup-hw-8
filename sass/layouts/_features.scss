@@ -10,6 +10,12 @@
 .features-container {
     display: flex;
     padding-bottom: 0px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .features__list {
@@ -19,6 +25,12 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         flex-direction: row;

@@ -132,13 +132,15 @@
         flex-direction: column;
         gap: 10px;
         align-items: unset;
+        margin-right: 0;
         margin-left: auto;
     }
 
     @media screen and (min-width: 1200px) {
       display: flex;
       gap: 50px;
-      margin-left: 15px;
+      //margin-left: 15px;
+      margin-left: auto;
     }
 
 }
