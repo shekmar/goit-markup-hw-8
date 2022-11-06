@@ -14,8 +14,6 @@
 
     @media screen and (min-width: 768px) {
         display: flex;
-        //text-align: center;
-        //align-items: center;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
@@ -31,15 +29,10 @@
 }
 
 .footer__box-tablet {
-
-    @media screen and (max-width: 767px) {
-        margin-bottom: 60px;
-        margin-left: auto;
-        margin-right: auto;
-    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         display: flex;
         margin-bottom: 60px;
+        gap: 165px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -52,15 +45,10 @@
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: 100%;
-        justify-content: space-between;
-        align-items: baseline;
-        padding-left: 61px;
-        padding-right: 74px;
-        margin-right: auto;
+        margin-left: auto;
     }
 
     @media screen and (min-width: 1200px) {
-        //align-items: baseline;
         margin-right: 70px;
     }
 }
@@ -141,19 +129,13 @@
     color: rgba(255, 255, 255, 0.6);
 }
 
-
-
-
-
-
 .footer-box-socials {
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) {
         align-items: center;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-
     }
 
     @media screen and (min-width: 1200px) {
@@ -189,6 +171,13 @@
     gap: 10px;
     padding: 0;
     margin: 0;
+
+    @media screen and (min-width: 320px) {
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     @media screen and (max-width: 767px) {
         align-items: center;
