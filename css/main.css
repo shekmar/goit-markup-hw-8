@@ -205,6 +205,11 @@
   display: inline-block;
   outline: 1px solid var(--accent-txt-cl);
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .navigation .navigation__header-link.current::after {
+    bottom: -6%;
+  }
+}
 
 .header-list-contacts {
   list-style: none;
@@ -659,7 +664,7 @@
   padding: 40px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  min-width: 350px;
+  min-width: 380px;
   height: 581px;
   background-color: var(--light-txt-cl);
   border-radius: 4px;
