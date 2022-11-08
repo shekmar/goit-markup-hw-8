@@ -68,7 +68,7 @@
     }
 
     @media screen and (max-width: 1199px) {
-        max-width: 354px;
+        //max-width: 354px;
     }
     
     @media screen and (min-width: 1200px) {
@@ -80,8 +80,6 @@
     display: block;
     max-width: 100%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .our-team__div {
