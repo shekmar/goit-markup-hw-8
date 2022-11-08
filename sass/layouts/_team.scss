@@ -23,15 +23,20 @@
     margin-top: 0;
     margin-bottom: 0;
     
-    @media screen and(min-width: 1200px) {
+    @media screen and (min-width: 1200px) {
         font-size: 36px;
         margin-bottom: 50px;
+    }
+
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 30px;
     }
 }
 
 .our-team__list {
     list-style: none;
     padding: 0;
+    margin: 0;
 
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -68,7 +73,7 @@
     }
 
     @media screen and (max-width: 1199px) {
-        //max-width: 354px;
+        max-width: 354px;
     }
     
     @media screen and (min-width: 1200px) {
