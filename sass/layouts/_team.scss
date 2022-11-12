@@ -65,21 +65,21 @@
     border-radius: 0px 0px 4px 4px;
 
     @media screen and (max-width: 767px) {
-        max-width: 450px;
         justify-content: center;
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 30px;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
         max-width: 354px;
     }
-    
-    @media screen and (min-width: 1200px) {
-        
-    }
 }
+
+.our-team__item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+}   
 
 .our-team__image {
     display: block;
