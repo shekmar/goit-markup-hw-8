@@ -61,6 +61,11 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .header {
+    max-height: 80px;
+  }
+}
 
 .header-container {
   display: -webkit-box;
@@ -207,7 +212,7 @@
 }
 @media screen and (min-width: 767px) and (max-width: 1199px) {
   .navigation .navigation__header-link.current::after {
-    bottom: -8%;
+    bottom: 0%;
   }
 }
 
@@ -237,10 +242,10 @@
             align-items: unset;
     margin-right: 0;
     margin-left: auto;
+    margin-top: auto;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 1200px) {
