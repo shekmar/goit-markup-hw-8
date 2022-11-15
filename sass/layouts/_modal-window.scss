@@ -74,6 +74,11 @@
     margin-left: auto;
 }
 
+.registry-form__title {
+    font-size: 20px; 
+}
+
+
 .field-title {
     font-family: 'Roboto';
     font-style: normal;
@@ -189,6 +194,7 @@
     border-radius: 4px;
     outline: none;
     padding: 12px 16px;
+    resize: none;
 }
 
 .modal-coments-area:hover {
